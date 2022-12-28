@@ -6,5 +6,15 @@ This repository describes how is a Chip-Design-eXecution pakcage organized, defi
 
 Current version is [0.1.0](pkgspec.md).
 
+## Support Programing Languages
+
+- tcl
+- python
+- cpp/c
+- viml
+- lua
+- go
+- shell
+- web (php/js)
 
 
