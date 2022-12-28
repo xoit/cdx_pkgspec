@@ -1,6 +1,8 @@
-# CDX Package SPEC
+# CDX Package Meta File
 
-CURRENT VERSION: 0.1.0
+CURRENT VERSION: **0.1.0**
+
+The SPEC is hosted at https://github.com/xoit/cdx_pkgspec
 
 A CDX Package is used to finish certain function in the Chip-Design-Execution process.
 
@@ -140,7 +142,7 @@ entry = "plugin.tcl"
 
 ## keywords
 
-A list of keywords that the package is related to. Optional
+A list of keywords that the package is related to. **Optional**
 
 The keyword could have "type", the format is "&lt;type&gt;:&lt;keyword&gt;". 
 
@@ -167,7 +169,7 @@ keywords = [
 ```
 ## engines
 
-The engines indicate the environment to run the package.
+The engines indicate the environment to run the package. **required**
 
 like tcl 8.6, python 3.18, eda tool, etc.
 
@@ -190,7 +192,7 @@ tcl = "8.6"
 
 ## maintainers
 
-The maintainers of the package. Optional
+The maintainers of the package. **Optional**
 
 This is a list of maintainers.
 
@@ -218,7 +220,7 @@ maintainers = [
 
 ## scripts
 
-This section describes the scripts or executables that will be installed when installing, testing or using the package
+This section describes the scripts or executables that will be installed when installing, testing or using the package. **Optional**
 
 ##### cdxpkg.toml
 
@@ -241,7 +243,7 @@ run = "tclsh demo.tcl"
 
 ## dependencies
 
-Package dependencies by default are from the path specified by one environment variable `CDXPKGPATH`.
+Package dependencies by default are from the path specified by one environment variable `CDXPKGPATH`. **Optional**
 
 ##### cdxpkg.toml
 
@@ -283,7 +285,7 @@ repository = "/home/demo/cdx_tutorial"
 ```
 ## extras
 
-Any other proposing keys or user custom keys go to this section.
+Any other proposing keys or user custom keys go to this section. **OPtional**
 
 Non-default keys which is not in current SPEC versions.
 
