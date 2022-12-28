@@ -4,13 +4,11 @@ CURRENT VERSION: 0.1.0
 
 A CDX Package is used to finish certain function in the Chip-Design-Execution process.
 
-## Folder Structure
+__Folder Structure__
 
 All the files (at least main files) must be in one folder as a package which will be used by the application.
 
 cdxpkg.toml or cdxpkg.json is the file to tell the meta information of the cdx package.
-
-## Package Meta File
 
 Package Meta File must be named "cdxpkg.toml" or "cdxpkg.json".
 
@@ -20,7 +18,7 @@ Plural keys are arrays, simple array or associated array.
 
 Singular keys are string.
 
-### name
+## name
 
 The name of the package. **Required**
 
@@ -46,7 +44,7 @@ name = "cdx_tutorial"
 }
 ```
 
-### version
+## version
 
 The version of the package. **Required**
 
@@ -66,7 +64,7 @@ version = "0.1.0"
 }
 ```
 
-### description
+## description
 
 A short description of the package. **Required**
 
@@ -86,7 +84,7 @@ description = "This is a tutorial for cdx_tutorial"
 }
 ```
 
-### license
+## license
 
 The license of the package. **optional**
 
@@ -122,7 +120,7 @@ license = "MIT"
 }
 ```
 
-### entry
+## entry
 
 The entry file for the package. **optional**
 
@@ -140,7 +138,7 @@ entry = "plugin.tcl"
 }
 ```
 
-### keywords
+## keywords
 
 A list of keywords that the package is related to. Optional
 
@@ -167,7 +165,7 @@ keywords = [
   ]
 }
 ```
-### engines
+## engines
 
 The engines indicate the environment to run the package.
 
@@ -190,7 +188,7 @@ tcl = "8.6"
 }
 ```
 
-### maintainers
+## maintainers
 
 The maintainers of the package. Optional
 
@@ -218,7 +216,7 @@ maintainers = [
 }
 ```
 
-### scripts
+## scripts
 
 This section describes the scripts or executables that will be installed when installing, testing or using the package
 
@@ -241,7 +239,7 @@ run = "tclsh demo.tcl"
 }
 ```
 
-### dependencies
+## dependencies
 
 Package dependencies by default are from the path specified by one environment variable `CDXPKGPATH`.
 
@@ -264,7 +262,7 @@ syn_summary = "1.0.0"
 }
 ```
 
-### repository
+## repository
 
 A location to the repository of the project. **Optional**
 
@@ -283,7 +281,7 @@ repository = "/home/demo/cdx_tutorial"
    "repository": "http://github.com/foo/bar.git"
 }
 ```
-### extras
+## extras
 
 Any other proposing keys or user custom keys go to this section.
 
